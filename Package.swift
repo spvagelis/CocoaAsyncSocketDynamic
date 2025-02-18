@@ -6,9 +6,9 @@ import PackageDescription
 let package = Package(
     name: "CocoaAsyncSocketDynamic",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
-        .tvOS(.v9)
+        .iOS(.v15),
+        .macOS(.v13),
+        .tvOS(.v12)
     ],
     products: [
         .library(
