@@ -1,10 +1,10 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "CocoaAsyncSocket",
+    name: "CocoaAsyncSocketDynamic",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),
@@ -12,24 +12,24 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "CocoaAsyncSocket",
+            name: "CocoaAsyncSocketDynamic",
             type: .dynamic,
-            targets: ["CocoaAsyncSocket"]),
+            targets: ["CocoaAsyncSocketDynamic"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "CocoaAsyncSocket",
+            name: "CocoaAsyncSocketDynamic",
             dependencies: [],
             path: "Source/GCD",
             publicHeadersPath: ""),
 
         .testTarget(name: "SharedObjCTests",
-                    dependencies: ["CocoaAsyncSocket"],
+                    dependencies: ["CocoaAsyncSocketDynamic"],
                     path: "Tests/Shared/ObjC"),
 
         .testTarget(name: "SharedSwiftTests",
-                    dependencies: ["CocoaAsyncSocket"],
+                    dependencies: ["CocoaAsyncSocketDynamic"],
                     path: "Tests/Shared/Swift")
     ]
 )
