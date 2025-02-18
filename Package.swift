@@ -13,6 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "CocoaAsyncSocket",
+            type: .dynamic,
             targets: ["CocoaAsyncSocket"]),
     ],
     dependencies: [],
