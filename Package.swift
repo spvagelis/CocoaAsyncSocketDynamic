@@ -6,9 +6,7 @@ import PackageDescription
 let package = Package(
     name: "CocoaAsyncSocket",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v13),
-        .tvOS(.v12)
+        .iOS(.v12)
     ],
     products: [
         .library(
